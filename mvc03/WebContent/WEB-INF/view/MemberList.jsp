@@ -31,6 +31,33 @@
 	}
 
 </style>
+<script type="text/javascript" src="http://code.jquery.com/jquery.min.js" ></script>
+
+<script type="text/javascript">
+	
+	$(document).ready(function()
+	{
+		$("#submitBtn").click(function()
+		{
+			$("#err").css("display", "none");
+			
+			//alert("gfd");
+			if ($("#name").val()=="" || $("#telephone").val()=="")
+			{
+				$("#err").css("display", "inline");
+				return;
+			}
+			
+			$("#memberForm").submit(); 
+			
+			
+		})
+	})
+
+</script>
+
+
+
 </head>
 <body>
 
@@ -40,12 +67,12 @@
 </div>
 
 <div>
-	<form action="" method="post">
+	<form action="memberinsert.do" method="post" id="memberForm">
 		이름 <input type="text" name="name" id="name" class="control" required="required"/>
 		<br />
 		전화 <input type="text" name="telephone" id="telephone" class="control" required="required"/>
 		<br />
-		<button type="button" id="submitBtn">회원 추가</button>
+		<button type="button" id="submitBtn" onclick="">회원 추가</button>
 		<span id="err">모든 항목을 입력해야 합니다.</span>
 	</form>
 	<br />

@@ -43,7 +43,19 @@
 		<property name="dao">
 			<ref bean="memberDAO"/>	
 		</property>
-	
 	</bean>
+
+
+	<!-- MemberInsertController -->
+	<bean name="/memberinsert.do" class="com.test.mvc.MemberInsertController">
+		<property name="dao">
+			<ref bean="memberDAO"/>	
+		</property>
+	</bean>
+
+
+
+
+
 
 </beans>
