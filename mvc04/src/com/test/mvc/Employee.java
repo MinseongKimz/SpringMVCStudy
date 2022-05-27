@@ -40,7 +40,7 @@ public class Employee
 	
 	private String ssn1, ssn2; // 주민번호 앞자리 뒷자리
 	
-	private int grad;  // 0 : 관리자 1 : 일반 사원
+	private int grade;  // 0 : 관리자 1 : 일반 사원
 	
 	// getter/setter
 	public String getEmployeeId()
@@ -187,13 +187,13 @@ public class Employee
 	{
 		this.ssn2 = ssn2;
 	}
-	public int getGrad()
+	public int getGrade()
 	{
-		return grad;
+		return grade;
 	}
-	public void setGrad(int grad)
+	public void setGrade(int grade)
 	{
-		this.grad = grad;
+		this.grade = grade;
 	}
 	
 	     

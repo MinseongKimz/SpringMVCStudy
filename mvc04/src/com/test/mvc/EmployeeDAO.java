@@ -17,9 +17,12 @@ import java.util.ArrayList;
 
 import javax.sql.DataSource;
 
+
+
+
 public class EmployeeDAO implements IEmployeeDAO
 {
-
+	
 	private DataSource dataSource;
 	
 	public void setDataSource(DataSource dataSource)
@@ -69,7 +72,7 @@ public class EmployeeDAO implements IEmployeeDAO
 			employee.setBasicPay(rs.getInt("BASICPAY"));
 			employee.setExtraPay(rs.getInt("EXTRAPAY"));
 			employee.setPay(rs.getInt("PAY"));
-			employee.setGrad(rs.getInt("GRADE"));
+			employee.setGrade(rs.getInt("GRADE"));
 			
 			result.add(employee);
 			
@@ -214,6 +217,7 @@ public class EmployeeDAO implements IEmployeeDAO
 				+ ", ?, ?, CRYPTPACK.ENCRYPT(?, ?)"
 				+ ", TO_DATE(?, 'YYYY-MM-DD')"
 				+ ", ?, ?, ?, ?, ?, ?, ?)";
+		
 		PreparedStatement pstmt = conn.prepareStatement(sql);
 		
 		pstmt.setString(1, employee.getName());
@@ -283,7 +287,7 @@ public class EmployeeDAO implements IEmployeeDAO
 		pstmt.setString(10, employee.getSsn1());
 		pstmt.setString(11, employee.getSsn2());
 		pstmt.setString(12, employee.getSsn2());
-		pstmt.setInt(13, employee.getGrad());
+		pstmt.setInt(13, employee.getGrade());
 		pstmt.setInt(14, Integer.parseInt(employee.getEmployeeId()));
 		
 		result = pstmt.executeUpdate();
