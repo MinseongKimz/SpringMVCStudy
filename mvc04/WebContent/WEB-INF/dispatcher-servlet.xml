@@ -37,11 +37,32 @@
 	 	<property name="dataSource" ref="localDataSource"></property>
 	</bean>
 	 
+	 
+	 
+	<!-- AJAX 관련 controller 등록 -->
+	 <bean name="/ajax.action" class="com.test.mvc.AjaxController">
+	 	<property name="dao" ref="employeeDAO"></property>
+	 </bean>
+	 
+	 
+	 
+	 
+	 
     <!-- Employee 관련 Controller 등록 -->
 	<bean name="/employeelist.action" class="com.test.mvc.EmployeeListController">
 		 <property name="dao" ref="employeeDAO"></property>
 	</bean>
-
+	
+	<bean name="/employeeinsertform.action" class="com.test.mvc.EmployeeInsertFormController">
+		<property name="dao" ref="employeeDAO"></property>
+	</bean>
+	
+	<bean name="/employeeinsert.action" class="com.test.mvc.EmployeeInsertController">
+		<property name="dao" ref="employeeDAO"></property>
+	</bean>
+	
+	
+	
 </beans>
 
 
