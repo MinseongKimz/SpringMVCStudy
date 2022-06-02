@@ -1,24 +1,26 @@
 @charset "UTF-8";
 
-/*========================
-	#14 menuStyle.css
-	- 메뉴 스타일 구성
-==========================*/
-
-
-ul
+/*=================
+ ⑭ MenuStyle.css
+ 메뉴 스타일 구성
+ ==================*/
+ 
+ 
+ ul
 {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
 }
 
-li{
+
+li
+{
 	width: 20%;
 	float: left;
-	
 }
+
 a.menu:link, a.menu:visited
 {
 	display: block;
@@ -31,9 +33,7 @@ a.menu:link, a.menu:visited
 	text-transform: uppercase;
 	height: 30px;
 	font-size: 14pt;
-	
 }
-
 
 a.menu:hover, a.menu:active
 {
@@ -43,27 +43,7 @@ a.menu:hover, a.menu:active
 	border-radius: 5px;
 	height: 26px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ 
+ 
+ 
+ 

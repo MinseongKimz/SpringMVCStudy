@@ -1,7 +1,7 @@
-/*==========================
- * 	#5. IEmployeeDAO.java
- * 	- 인터페이스
- *========================== */
+/*==============================
+ * ⑤IEmployeeDAO
+ 	-인터페이스
+ ===============================*/
 
 package com.test.mvc;
 
@@ -10,6 +10,7 @@ import java.util.ArrayList;
 
 public interface IEmployeeDAO
 {
+	//직원
 	public ArrayList<Employee> list() throws SQLException;
 	
 	public ArrayList<Region> regionList() throws SQLException;
@@ -24,6 +25,7 @@ public interface IEmployeeDAO
 	
 	public String login(String id, String pw) throws SQLException;
 	public String loginAdmin(String id, String pw) throws SQLException;
+	
 	
 	
 	

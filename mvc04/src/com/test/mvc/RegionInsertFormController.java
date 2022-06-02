@@ -13,7 +13,7 @@ import org.springframework.web.servlet.mvc.Controller;
 
 //※ Spring 의 [Controller] 인터페이스를 구현하는 방법을 통해
 //	 사용자 정의 컨트롤러 클래스를 구성한다.
-public class HelloController implements Controller
+public class RegionInsertFormController implements Controller
 {
 
 	@Override
@@ -23,6 +23,7 @@ public class HelloController implements Controller
 		
 		ModelAndView mav = new ModelAndView();
 		
+		mav.setViewName("/WEB-INF/view/RegionInsertForm.jsp");
 		
 		return mav;
 		

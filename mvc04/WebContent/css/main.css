@@ -1,64 +1,86 @@
 @charset "UTF-8";
-
-
-
-body, p, div, span, input, table, th, td, select, textarea
+/*==================
+16 main.css
+-메인 스타일 구성
+*=====================*/
+*
 {
-	font-size : 18px;
 	font-family: 맑은 고딕;
 	color: #343;
 }
+
+body, p, div, span, input, table, th, td, select,textarea
+{
+	font-size : 18px;
+	font-familt:맑은 고딕;
+	color:#343;
+}
+
 a
 {
 	text-decoration: none;
-	color: gray;
+	color:gray;
 }
 a:hover
 {
-	text-decoration: underline;
-	color: red;
+	text-decoration:underline;
+	color:red;
 }
-
 .table
 {
-	border-collapse: collapse;
-	width: 100%;
+	border-collapse:collapse;
+	width:100%;
+	
 }
 .table th, .table td
 {
-	border : 1px solid gray;
-	border-left:0px;
+	border:1px solid gray;
+	border-left: 0px;
 	border-right: 0px;
 	
-	padding: 3px;
+	padding:3px;
 	line-height: 150%;
-	text-align: center;
+	text-align:center;
 }
-
 .table th
 {
-	font-weight: bold;
-	background-color: #eee;
-	
-	
+	font-weight:bold;
+	background-color:#eee;
 }
-.table td 
+.table td
 {
-	font-size: 12pt;
+	font-size:12pt;
 }
-
 .btn
 {
-	cursor: pointer;
-	font-family: 맑은 고딕;
-	font-weight: bold;
+	cursor:pointer;
+	font-family:맑은 고딕;
+	font-weight:bold;
 }
-
 .btn:hover
 {
 	color:#ffffff;
-	background-color: green;
+	background-color:#00800;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

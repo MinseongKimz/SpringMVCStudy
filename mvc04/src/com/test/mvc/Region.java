@@ -1,25 +1,19 @@
-/*==========================
- * 	#3. Region.java
- * 	- 지역 데이터 자료형 클래스
- *========================== */
-
-/*
- * ---------- -------- ------------ 
-REGIONID   NOT NULL NUMBER       
-REGIONNAME          VARCHAR2(30) 
-DELCHECK            NUMBER       
- * */
+/*=============================
+ * ③Region
+ 	-지역 데이터 자료형 클래스
+ ==============================*/
 
 package com.test.mvc;
 
 public class Region
 {
+	//주요 속성 구성
 	private String regionId, regionName;
-	private int delCheck; // 삭제 가능 여부
-	// 참조 되어있지 않으면 0 → 삭제 가능
-	// 참조 되있는 수만큼 n → 삭제 불가능
+	private int delCheck;	//-- 삭제 가능 여부에 대한 확인
+	//-- 참조되고 있는 경우(1 이상) 삭제 불가능.
+	//   그렇지 않은 경우(0)만 삭제 가능.
 	
-	// getter / setter
+	//getter/setter구성
 	public String getRegionId()
 	{
 		return regionId;

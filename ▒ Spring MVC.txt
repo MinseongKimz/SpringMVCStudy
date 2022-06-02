@@ -348,9 +348,25 @@ http://localhost:8090/mvc03/memberlist.do
    - EmployeeInsertForm.jsp     → 직원 데이터 입력 폼 페이지.
                                    AJAX, jQuery 기능 포함.
 
+
+
+
+
    - EmployeeUpdateForm.jsp     → 직원 데이터 수정 폼 페이지.
                                    AJAX, jQuery 기능 포함.
  
+
+   - EmployeeUpdateFormController.java
+     (employeeupdateform.action)
+
+
+
+
+
+
+
+
+
    - DepartmentList.jsp         → 부서 리스트 출력 페이지.
    - DepartmentInsertForm.jsp   → 부서 데이터 입력 폼 페이지.
    - DepartmentUpdateForm.jsp   → 부서 데이터 수정 폼 페이지. 
@@ -382,9 +398,6 @@ http://localhost:8090/mvc03/memberlist.do
 
    - AjaxController.java
      (ajax.action)
-
-   - EmployeeUpdateFormController.java
-     (employeeupdateform.action)
 
    - EmployeeUpdateController.java
      (employeeupdate.action)

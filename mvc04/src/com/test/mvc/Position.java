@@ -1,24 +1,19 @@
-/*==========================
- * 	#4. Position.java
- * 	- 직위 데이터 자료형 클래스
- *========================== */
-
-/*
- * ------------ -------- ------------ 
-POSITIONID   NOT NULL NUMBER       
-POSITIONNAME          VARCHAR2(30) 
-MINBASICPAY           NUMBER       
-DELCHECK              NUMBER    
- * */
+/*=================
+ * ④Position
+ 	-직위 리스트 자료형 클래스
+ ===================*/
 
 package com.test.mvc;
 
 public class Position
 {
 	private String positionId, positionName;
-	private int minBasicPay, delCheck; // 최소 기본급
+	private int minBasicPay;
+	private int delCheck;	//-- 삭제 가능 여부에 대한 확인
+	//-- 참조되고 있는 경우(1 이상) 삭제 불가능.
+	//   그렇지 않은 경우(0)만 삭제 가능.
 	
-	// getter / setter
+	//getter/setter구성
 	public String getPositionId()
 	{
 		return positionId;
@@ -51,6 +46,7 @@ public class Position
 	{
 		this.delCheck = delCheck;
 	}
+	
 	
 	
 }
