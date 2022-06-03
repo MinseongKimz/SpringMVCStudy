@@ -87,6 +87,7 @@
             	</td>
             </tr>        
          </table>
+      <span style="display: none;"><input type="text" id="delCheck" value="${region.delCheck }"/></span>
       
       </form>
       

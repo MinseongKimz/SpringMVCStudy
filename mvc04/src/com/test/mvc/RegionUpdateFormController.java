@@ -59,6 +59,12 @@ public class RegionUpdateFormController implements Controller
 			Region region = new Region();
 			region = dao.search(regionId);
 			
+			if (region.getDelCheck()!=0)
+			{
+				mav.setViewName("redirect:regionlist.action");
+				return mav;
+			}	
+			
 			mav.addObject("region", region);
 			
 			mav.setViewName("/WEB-INF/view/RegionUpdateForm.jsp");
@@ -67,25 +73,6 @@ public class RegionUpdateFormController implements Controller
 		{
 			System.out.println(e.toString());
 		}
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 		
 		return mav;
 		

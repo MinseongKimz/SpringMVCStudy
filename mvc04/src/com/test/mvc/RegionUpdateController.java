@@ -54,9 +54,22 @@ public class RegionUpdateController implements Controller
 		String regionName = request.getParameter("name");
 		String regionId = request.getParameter("regionId");
 		
+		
 		try
 		{
+			
 			Region region = new Region();
+
+			region = dao.search(regionId);
+			
+			int delCheck = region.getDelCheck();
+			
+			if (delCheck!=0)
+			{
+				mav.setViewName("redirect:regionlist.action");
+				return mav;
+			}
+			
 			region.setRegionId(regionId);
 			region.setRegionName(regionName);
 			

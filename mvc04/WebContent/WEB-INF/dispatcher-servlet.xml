@@ -124,6 +124,10 @@
 		<property name="dao" ref="regionDAO"></property>
 	</bean>
 	
+	<bean name="/regiondelete.action" class="com.test.mvc.RegionDeleteController">
+		<property name="dao" ref="regionDAO"></property>
+	</bean>
+	
 </beans>
 
 
