@@ -33,11 +33,12 @@ COMMIT;
 
 
 
+SELECT ID, NAME, TEL, EMAIL FROM TBL_MEMBERLIST
+;
 
 
 
-
-
+select * from tbl_memberlist;
 
 
 
